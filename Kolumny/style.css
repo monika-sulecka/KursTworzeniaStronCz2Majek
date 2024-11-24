@@ -16,6 +16,7 @@ body {
     text-align: center;
 }
 
+/* [class*=’col’] będą oznaczone wszystkie elementy zawierające nazwę class na początku */
 [class*='col'] {
     border: 2px solid lime;
 }
