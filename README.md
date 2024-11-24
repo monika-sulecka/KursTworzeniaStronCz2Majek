@@ -36,9 +36,7 @@ The projects are structured in a way to show progression in learning, from basic
 - Apply the learned skills by creating a simple, functional website.
 
 ## Author
-Created by: **Monika Sulecka-Grochowska**  
-Based on the course by: **Udemy - ## Author
-Created by: **Your Name**  
+Created by: **Monika Sulecka-Grochowska**   
 Based on the course by: **Udemy - "Od zera do Front-End Developera: Część 2"**
 https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/?couponCode=BFCPSALE24 by Mateusz Maj
 
