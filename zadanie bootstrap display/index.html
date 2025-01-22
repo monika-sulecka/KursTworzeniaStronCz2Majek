@@ -11,15 +11,24 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="">XS</div>
-    <!-- aby ukryć element nadajemy klasę d-none -->
-    <div class="d-none">XS</div>
-    <!-- zmianę na obiekt liniowy a nie blokowy -->
-    <div class="d-none d-sm-inline">SM</div>
-    <div class="d-none d-md-block">MD</div>
-    <div class="d-none d-lg-inline">LG</div>
-    <div class="d-none d-xl-inline">XL</div>
-    
+    <div class="container">
+        <div class="d-flex flex-column">
+            <div class="d-md-none d-xl-block bg-primary">XYZ</div>
+            <div class="d-none d-lg-block bg-success">ABCD</div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="d-flex justify-content-evenly">
+            <p class="bg-info">123</p>
+            <p class="d-none d-smb-block bg-danger">123</p>
+            <p class="bg-warning">123</p>
+        </div>
+    </div>
+
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
