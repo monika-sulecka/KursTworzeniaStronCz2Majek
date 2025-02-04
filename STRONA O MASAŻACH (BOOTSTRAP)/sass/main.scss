@@ -6,5 +6,19 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #ffff;
+	background-color: #333;
+}
+
+nav {
+	text-transform: uppercase;
+
+	.nav-link,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .nav-link.show,
+	.navbar-brand, .fa-bars {
+		color: #fff;
+	}
+	.nav-link:focus, .nav-link:hover {
+		color: #039dff;
+	}
 }
