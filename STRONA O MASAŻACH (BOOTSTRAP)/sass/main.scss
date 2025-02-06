@@ -8,11 +8,21 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: $background;
+	background-color: $bg-color;
 }
 
 nav {
 	text-transform: uppercase;
+	.navbar-brand {
+		
+	}
+	.navbar-brand:hover, .navbar-brand:focus {
+		color: $focus-on;
+	}
+
+	.navbar-toggler {
+		padding: 10px 15px;
+	}
 
 	.nav-link,
 	.navbar-nav .nav-link.active,

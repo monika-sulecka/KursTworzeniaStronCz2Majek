@@ -12,6 +12,12 @@ body {
 nav {
   text-transform: uppercase;
 }
+nav .navbar-brand:hover, nav .navbar-brand:focus {
+  color: #9c8396;
+}
+nav .navbar-toggler {
+  padding: 10px 15px;
+}
 nav .nav-link,
 nav .navbar-nav .nav-link.active,
 nav .navbar-nav .nav-link.show,
