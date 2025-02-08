@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 <!-- logo of company -->
                 <i class="fa-solid fa-spa"></i> CALM Beauty & Therapy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -28,9 +28,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#rituals">Rytuały</a>
+                    <a class="nav-link active" href="#home">Home</a>
+                    <a class="nav-link" href="#rituals">Rytuały</a>
                     <a class="nav-link" href="#effects">Efekty</a>
-                    <a class="nav-link" href="#about">O Nas</a>
+                    <a class="nav-link" href="#aboutus">O Nas</a>
                     <a class="nav-link" href="#price">Cennik</a>
                     <a class="nav-link" href="#book">Umów się!</a>
                     <a class="nav-link" href="#courses">Szkolenia</a>
@@ -39,16 +40,20 @@
         </div>
     </nav>
 
-    <header class="hero-img">
+    <header class="hero-img" id="home">
         <div class="hero-text">
             <h1>witajcie</h1>
             <p> W strefie piękna i relaksu!</p>
+            <a href="#aboutus" class="btn btn-outline-light mt-2">POZNAJ NAS</a>
+
         </div>
         <div class="hero-shadow"></div>
+
+        <a href="#aboutus"><i class="fa-solid fa-chevron-down"></i></a>
     </header>
 
-    <div style="height: 200vh;"></div>
 
+    <section id="aboutus" style="height: 30vh;background-color: blueviolet;"></section>
 
 
 
