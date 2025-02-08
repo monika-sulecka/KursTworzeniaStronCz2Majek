@@ -12,8 +12,12 @@ body {
 nav {
   text-transform: uppercase;
 }
-nav .navbar-brand:hover, nav .navbar-brand:focus {
-  color: #9c8396;
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .navbar-brand:hover,
+nav .navbar-brand:focus {
+  color: #5e0549;
 }
 nav .navbar-toggler {
   padding: 10px 15px;
@@ -23,12 +27,45 @@ nav .navbar-nav .nav-link.active,
 nav .navbar-nav .nav-link.show,
 nav .navbar-brand,
 nav .fa-bars {
-  color: #5d3754;
+  color: #94407f;
 }
 nav .nav-link:focus,
 nav .nav-link:hover,
 nav .navbar-nav .nav-link.active,
 nav .navbar-nav .nav-link.show,
 nav .fa-bars {
-  color: #9c8396;
+  color: #5e0549;
+}
+
+header.hero-img {
+  color: #94407f;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2024/02/26/14/13/flowers-8598056_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header.hero-img h1,
+header.hero-img p {
+  color: #5e0549;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px gray;
+}
+header.hero-img .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(246, 240, 240, 0.4);
+}
+header.hero-img .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
