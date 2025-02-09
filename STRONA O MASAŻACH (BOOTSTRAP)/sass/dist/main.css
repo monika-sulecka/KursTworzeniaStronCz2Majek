@@ -13,6 +13,21 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin-bottom: 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #ab268c;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 nav {
   text-transform: uppercase;
 }
@@ -80,6 +95,11 @@ header.hero-img .fa-chevron-down {
   bottom: 20px;
   font-size: 30px;
   color: #94407f;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
 }
 
 @media (min-width: 375px) and (max-width: 768px) {

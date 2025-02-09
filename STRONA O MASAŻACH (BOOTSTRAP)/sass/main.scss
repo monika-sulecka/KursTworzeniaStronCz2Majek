@@ -15,6 +15,21 @@ body {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+}
+.underline {
+	margin-bottom: 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $second-color;
+	position: absolute;
+	// perfect in the middle, we could use also margin: 0 auto; for that
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 nav {
 	text-transform: uppercase;
 	.navbar-brand {
@@ -86,6 +101,13 @@ header.hero-img {
 		font-size: 30px;
 		color: $main-color;
 	}
+}
+
+.aboutus i {
+	// it's only for icon
+	margin-top: 20px;
+	font-size: 30px;
+
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
