@@ -11,6 +11,10 @@ body {
 	background-color: $bg-color;
 }
 
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
 nav {
 	text-transform: uppercase;
 	.navbar-brand {
@@ -84,7 +88,19 @@ header.hero-img {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
+	header.hero-text {
+		h1,
+		.navbar-brand {
+			font-size: 28px;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
 	header.hero-text {
 		h1 {
 			font-size: 42px;
@@ -94,7 +110,7 @@ header.hero-img {
 		}
 	}
 }
-@media (nim-width: 1200px) {
+@media (min-width: 1200px) {
 	header.hero-img {
 		// in case of different device
 		background-image: url('https://cdn.pixabay.com/photo/2024/02/26/14/13/flowers-8598056_1280.jpg');
