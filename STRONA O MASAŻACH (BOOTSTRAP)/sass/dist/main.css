@@ -4,18 +4,17 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 74px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f5e7da;
 }
 
 .shadow-bg {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .underline {
@@ -100,6 +99,29 @@ header.hero-img .fa-chevron-down {
 .aboutus i {
   margin-top: 20px;
   font-size: 30px;
+  color: #ab268c;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+
+section.aboutus .section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+section.aboutus .card-about {
+  transition: color 0.3s;
+}
+section.aboutus .card-about:hover {
+  color: #5e0549;
+  transition: color 0.3s;
+}
+section.aboutus .card-about:hover i {
+  font-size: 40px;
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
@@ -120,6 +142,10 @@ header.hero-text .navbar-brand {
   }
 }
 @media (min-width: 1200px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+
   header.hero-img {
     background-image: url("https://cdn.pixabay.com/photo/2024/02/26/14/13/flowers-8598056_1280.jpg");
   }

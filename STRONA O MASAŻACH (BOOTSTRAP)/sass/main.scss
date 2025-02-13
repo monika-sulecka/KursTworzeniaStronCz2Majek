@@ -5,6 +5,9 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-padding-top: 74px;
+}
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -12,13 +15,10 @@ body {
 }
 
 .shadow-bg {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.section-title {
-	text-align: center;
-	text-transform: uppercase;
-}
+
 .underline {
 	margin-bottom: 40px;
 	width: 60px;
@@ -102,13 +102,40 @@ header.hero-img {
 		color: $main-color;
 	}
 }
-
-.aboutus i {
+.aboutus {
+	i {
 	// it's only for icon
 	margin-top: 20px;
 	font-size: 30px;
-
+	color: $second-color
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
 }
+
+section.aboutus{
+	.section-title {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.card-about {
+		transition: color .3s;
+	}
+	.card-about:hover {
+		color: $focus-on;
+		transition: color .3s;
+		i {
+			font-size: 40px;
+		}
+	}
+}
+
+
 
 @media (min-width: 375px) and (max-width: 768px) {
 	header.hero-text {
@@ -133,6 +160,10 @@ header.hero-img {
 	}
 }
 @media (min-width: 1200px) {
+	html {
+		scroll-padding-top: 72px;
+	}
+
 	header.hero-img {
 		// in case of different device
 		background-image: url('https://cdn.pixabay.com/photo/2024/02/26/14/13/flowers-8598056_1280.jpg');
