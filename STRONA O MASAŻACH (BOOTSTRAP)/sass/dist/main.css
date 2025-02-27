@@ -124,6 +124,19 @@ section.aboutus .card-about:hover i {
   font-size: 40px;
 }
 
+section.rituals .section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+section.rituals .rituals-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(246, 240, 240, 0.4);
+}
+
 @media (min-width: 375px) and (max-width: 768px) {
   header.hero-text h1,
 header.hero-text .navbar-brand {
