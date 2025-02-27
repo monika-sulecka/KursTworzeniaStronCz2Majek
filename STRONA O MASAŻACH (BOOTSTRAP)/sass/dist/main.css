@@ -136,6 +136,9 @@ section.rituals .rituals-shadow {
   height: 100%;
   background-color: rgba(246, 240, 240, 0.4);
 }
+section.rituals .card {
+  margin: 1.5rem 1rem;
+}
 
 @media (min-width: 375px) and (max-width: 768px) {
   header.hero-text h1,
