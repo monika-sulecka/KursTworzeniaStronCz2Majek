@@ -201,6 +201,7 @@ section.effects {
 .pricing7 h5 {
   line-height: 22px;
   font-size: 18px;
+  font-weight: bold;
   color: $main-color;
 }
 
@@ -247,6 +248,22 @@ section.effects {
 .pricing7 .btn-md {
   padding: 15px 45px;
   font-size: 16px;
+}
+
+.pricing7 .card-body:hover {
+	scale: 1.10;
+}
+.priceCards {
+	transition: scale .3s;
+}
+
+.priceCards:hover {
+	scale: 1.10;
+
+	h5 {
+		font-size: larger;
+	}
+
 }
 
 
