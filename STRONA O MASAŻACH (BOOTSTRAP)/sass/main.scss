@@ -84,6 +84,7 @@ header.hero-img {
 		width: 100%;
 		height: 100%;
 		background-color: rgba(246, 240, 240, 0.4);
+		z-index: -5;
 	}
 	.hero-text {
 		display: flex;
@@ -91,6 +92,7 @@ header.hero-img {
 		align-items: center;
 		flex-direction: column;
 		height: 100%;
+		z-index: 0;
 	}
 	.fa-chevron-down {
 		position: absolute;
@@ -138,8 +140,6 @@ section.rituals {
 		text-align: center;
 		text-transform: uppercase;
 	}
-	// .rituals-hero{
-	// }
 
 	.rituals-shadow {
 		position: absolute;
@@ -154,6 +154,106 @@ section.rituals {
 	}
 }
 
+section.effects {
+	.section-title {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.carousel-inner {
+		top: 20px;
+	}
+	.carousel-item {
+		height: 600px;
+	}
+	.carousel-caption {
+		left: 0;
+		right: 0;
+		background-color: rgb( 0, 0, 0, 0.2);
+	}
+}
+
+// css for pricing cards
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.pricing7 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.pricing7 h1,
+.pricing7 h2,
+.pricing7 h3,
+.pricing7 h4,
+.pricing7 h5,
+.pricing7 h6 {
+  color: #3e4555;
+}
+
+.pricing7 .font-weight-medium {
+  font-weight: 500;
+}
+
+.pricing7 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.pricing7 h5 {
+  line-height: 22px;
+  font-size: 18px;
+  color: $main-color;
+}
+
+.pricing7 .pricing-box sup {
+  top: -20px;
+  font-size: 16px;
+}
+
+.pricing7 .pricing-box .btn {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.pricing7 .text-info {
+  color: #188ef4 !important;
+}
+
+.pricing7 .display-6 {
+  font-size: 36px;
+}
+
+.pricing7 .display-5 {
+  font-size: 3rem;
+}
+
+.pricing7 .btn-info-gradiant {
+  background: #188ef4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+  background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+}
+
+.pricing7 .btn-info-gradiant:hover {
+  background: #316ce8;
+  background: -webkit-linear-gradient(legacy-direction(to right), #316ce8 0%, #188ef4 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#316ce8), to(#188ef4));
+  background: -webkit-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+  background: -o-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+  background: linear-gradient(to right, #316ce8 0%, #188ef4 100%);
+}
+
+.pricing7 .btn-md {
+  padding: 15px 45px;
+  font-size: 16px;
+}
+
+
+
+
+
+
 @media (min-width: 375px) and (max-width: 768px) {
 	header.hero-text {
 		h1,
@@ -166,7 +266,7 @@ section.rituals {
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 992px) {
 	header.hero-text {
 		h1 {
 			font-size: 42px;
@@ -176,6 +276,17 @@ section.rituals {
 		}
 	}
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+	header.hero-text {
+		h1 {
+			font-size: 42px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+}
+
 @media (min-width: 1200px) {
 	html {
 		scroll-padding-top: 72px;
